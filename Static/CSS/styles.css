@@ -1,0 +1,346 @@
+body{
+    /* overflow: hidden; */
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+#intro{
+display: flex;
+flex-direction: column;
+
+}
+
+.Name{
+    display: flex;
+    width: 100%;
+    padding-left: 50px;
+}
+.Texting{
+    font-family: "Bruno Ace", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    height: min-content;
+    font-weight: bolder;
+    color: white;
+    cursor:default;
+    transition: 1s ease-in-out;
+}
+.Texting:hover{
+    transition: 1s ease-in-out;
+    
+    color:rgb(166, 0, 243);
+
+}
+.Motive{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 350px;
+    padding-bottom: 150px;
+}
+.Explore{
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 80px;
+    transition: 1s ease-in-out;
+}
+.Explore:hover{
+    /* color: rgb(255, 0, 0); */
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 80px;
+    text-shadow:  0 0 60px #00FFCB;
+    transition: 1s ease-in-out;
+}
+h1.Explore {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Next {
+    padding: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button {
+    min-width: 150px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(150px + 12px);
+    min-height: calc(40px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  /* section2 */
+  #I_do{
+
+    background-color: #ffffff;
+  }
+  .About_Me{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+  }
+  .My_pic_parell{
+    padding: 30px;
+    display: block;
+  position: relative;
+  width: 500px; /* Adjust as needed */
+  height: 450px; /* Adjust as needed */
+  transform: skewX(50deg);
+  overflow: hidden;
+  }
+  .my_pic{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 50px 30px black;
+    transform: skewX(-50deg);
+  }
+  .Me_word{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .Me_word h1{
+    
+    font-size: 90px;
+    font-family: "Bruno Ace", sans-serif;
+    color: #313133;
+    transition: 1s ease-in-out;
+  }
+  .Me_word h1:hover{
+
+    transition: 0.3s ease-in-out;
+   
+  }
+  #Details{
+    font-size: 20px;
+    font-family: "Bruno Ace", sans-serif;
+    color: #313133;
+}
+  #ic{
+    animation: rotate 1s  linear infinite;
+  }
+  .par_fill{
+    
+    width: 70px;
+    height: 600px;
+    display: inline-block;
+    background: rgb(255, 102, 0);
+    border: none;
+    box-shadow: -30px 20px 20px rgb(39, 39, 39);
+    transform: skewX(30deg);
+    transition: 1s ease-in-out;
+  }
+  .par_fill:hover{
+    box-shadow: 0px 0px 0px rgb(39, 39, 39);
+    transition: 0.1s ;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+  }
+  
+.My_Skills{ 
+    width: 100%;
+    height: 740px;
+    padding: 0%;
+    background-image: url('Images/Default_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.My_Skills ul {
+    height: 100%;
+    margin:auto;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style: none;
+    
+}
+.My_Skills li {
+    color: white;
+    text-decoration: none;
+    font-family: "Bruno Ace", sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+   
+   
+
+}
+.My_Skills ul li:hover{
+    color: rgb(240, 82, 42);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    
+}
+  @media only screen and (max-width: 860px){
+    .Name{
+        display: flex;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .Texting{
+        font-family: "Bruno Ace", sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        height: min-content;
+        font-weight: bolder;
+        color: white;
+        cursor:default;
+        transition: 1s ease-in-out;
+    }
+    .Motive{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 460px;
+        padding-bottom: 10vh;
+    }
+    .Explore{
+        color: white;
+        font-family: "Bruno Ace", sans-serif;
+        font-size: 40px;
+        transition: 1s ease-in-out;
+    }
+    .About_Me{
+      display: flex;
+      justify-content: space-evenly;
+      overflow: hidden;
+  
+    }
+    .My_pic_parell{
+      padding: 30px;
+      display: block;
+    position: relative;
+    width: 500px; /* Adjust as needed */
+    height: 450px; /* Adjust as needed */
+    transform: skewX(-30deg);
+    overflow: hidden;
+    }
+    .my_pic{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 50px 30px black;
+      transform: skewX(30deg);
+    }
+    .Me_word{
+      padding-left: 30px;
+      padding-right: 10px;
+    }
+    .Me_word h1{
+      
+      font-size: 50px;
+      font-family: "Bruno Ace", sans-serif;
+      color: #313133;
+      transition: 1s ease-in-out;
+    }
+    .Me_word h1:hover{
+  
+      transition: 0.3s ease-in-out;
+     
+    }
+    #Details{
+      font-size: 20px;
+      font-family: "Bruno Ace", sans-serif;
+      color: #313133;
+  }
+  .par_fill{
+    display: none;
+  }
+  }
+    
+/* .bruno-ace-regular {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
