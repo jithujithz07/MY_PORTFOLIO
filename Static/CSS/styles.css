@@ -26,7 +26,15 @@ body {
   transition: 1s ease-in-out;
 
   color: rgb(166, 0, 243);
+  Explore {
+    
+    font-size: 10px;
+  }
 }
+.Texting:hover ~ .Explore {
+    
+    color:  #ccc#333;
+  }
 .Motive {
   width: 100%;
   display: flex;
@@ -410,6 +418,7 @@ button:focus::after {
     
     padding: 33px;
 }
+.my_pic:focus
 .My_Skills {
   height: 896px;
 }
