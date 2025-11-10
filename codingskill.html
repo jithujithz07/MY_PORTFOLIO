@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Arsenals</title>
+    <script src="https://cdn.jsdelivr.net/npm/kinet@2.1.1/kinet.min.js"></script>
+    <link rel="stylesheet" href="Static/CSS/codingstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <section>
+        
+        <div class="SkillHead">
+            <h1>My Arsenal Levels</h1>
+        </div>
+        <div class="handle">
+            <div class="handlereach"></div>
+            <div class="handlereach"></div>
+            <div class="handlereach"></div>
+        </div>
+        <div class="skillbarbox">
+            <div class="skills">  <!-- create a div -->
+                <h1>Webpage Designing </h1> <!-- heading -->
+                <li>
+                    <h3>HTML (lvl 7)</h3><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
+                </li>
+            
+                <li>
+                    <h3>CSS (lvl 9)</h3><span class="bar"><span class="css"></span></span><!-- skill bar 2 -->
+                </li>
+            
+                <li>
+                    <h3>JAVASCRIPT (lvl 5)</h3><span class="bar"><span class="javascript"></span></span><!-- skill bar 3 -->
+                </li>
+            
+                
+            </div>
+            <div class="skills">  <!-- create a div -->
+                <h1>Django Framework</h1> <!-- heading -->
+                <li>
+                    <h3>PYTHON (lvl 8)</h3><span class="bar"><span class="python"></span></span><!-- skill bar 4 -->
+                </li>
+                <li>
+                    <h3>HTML (lvl 7)</h3><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
+                </li>
+            
+                <li>
+                    <h3>CSS (lvl 9)</h3><span class="bar"><span class="css"></span></span><!-- skill bar 2 -->
+                </li>
+            
+                <li>
+                    <h3>JAVASCRIPT (lvl 5)</h3><span class="bar"><span class="javascript"></span></span><!-- skill bar 3 -->
+                </li>
+                <li>
+                    <h3>Sqlite (lvl 4)</h3><span class="bar"><span class="sqlite"></span></span><!-- skill bar 3 -->
+                </li>
+            
+                
+            </div>
+            <div class="skills">  <!-- create a div -->
+                <h1>Odoo Framework(ERP Software)</h1> <!-- heading -->
+                <li>
+                    <h3>PYTHON (lvl 8)</h3><span class="bar"><span class="python"></span></span><!-- skill bar 4 -->
+                </li>
+                <li>
+                    <h3>HTML (lvl 8)</h3><span class="bar"><span class="html"></span></span> <!-- skill bar 1 -->
+                </li>
+            
+                <li>
+                    <h3>CSS (lvl 9)</h3><span class="bar"><span class="css"></span></span><!-- skill bar 2 -->
+                </li>
+            
+                <li>
+                    <h3>JAVASCRIPT (lvl 5)</h3><span class="bar"><span class="javascript"></span></span><!-- skill bar 3 -->
+                </li>
+            
+                <li>
+                    <h3>XML  (lvl 2)</h3><span class="bar"><span class="xml"></span></span><!-- skill bar 4 -->
+                </li>
+            </div>
+            <div class="skills">  <!-- create a div -->
+                <h1>Flutter</h1> <!-- heading -->
+                <li>
+                    <h3>DART (lvl 3)</h3><span class="bar"><span class="dart"></span></span><!-- skill bar 4 -->
+                </li>
+            </div>
+        </div>
+    </section>
+    <a class="button-wrapper">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-4"></span>
+        <span class="dot dot-5"></span>
+        <span class="dot dot-6"></span>
+        <span class="dot dot-7"></span>
+        <span class="button bg-yellow-500 px-16 py-4 rounded-full uppercase">Button<span>
+      </a>
+          
+      <div id="circle" class="circle "></div>
+      <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+    <script src="./Static/Javascript/codingjs.js" type="module"></script>
+    <script>
+        var kinet = new Kinet({
+            acceleration: 0.02,
+            friction: 0.25,
+            names: ["x", "y"],
+        });
+    
+        var circle = document.getElementById('circle');
+    
+        kinet.on('tick', function(instances) {
+            circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
+        });
+    
+        document.addEventListener('mousemove', function (event) {
+            kinet.animate('x', event.clientX - window.innerWidth / 2 + window.scrollX);
+            kinet.animate('y', event.clientY - window.innerHeight / 2 + window.scrollY);
+        });
+    
+        kinet.on('start', function() {
+            console.log('start');
+        });
+    
+        kinet.on('end', function() {
+            console.log('end');
+        });
+    </script>
+
+</body>
+</html>

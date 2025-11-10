@@ -1,0 +1,414 @@
+body{
+    background-color: black;
+}
+.SkillHead{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .SkillHead h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Bruno Ace", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+  }
+  .handle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .handlereach{
+    border-radius: 10px;
+    margin: 5px;
+   width: 80px;
+   height: 5px;
+   background-color: #ffffff;
+   box-shadow: 0 0 10px #2187e7b3;
+   animation: handle 2s;
+  }
+  @keyframes handle{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80px;
+	}
+}
+
+  .skillbarbox{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  }
+  .skills h1{ /*change font family of heading*/
+	font-family: "Bruno Ace", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+}
+
+li{ /*style the li tag*/
+	list-style-type: none;
+    font-size: 5 px;
+	font-family: "Bruno Ace", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+}
+
+.skills{ /*style the text*/
+	width: 500px;
+	margin: 60px auto;
+	color: #fff;
+}
+
+.skills li{ /*set margin of li*/
+	margin: 20px 0;
+}
+
+.bar{ /*style the bar*/
+	background-color: #353b48;
+	display: block;
+	height: 2px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{ /*style the span tag*/
+	height: 2px;
+	float: left;
+	background-color: #2187e7;
+}
+
+.html{ /*set skills and animation of html*/
+	width: 70%;
+	animation: html 2s;
+}
+
+.css{ /*set skills and animation of css*/
+	width: 85%;
+	animation: css 2s;
+}
+
+.javascript{ /*set skills and animation of javascript*/
+	width: 50%;
+	animation: javascript 2s;
+}
+
+.jquery{ /*set skills and animation of jquery*/
+	width: 30%;
+	animation: jquery 2s;
+}
+
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes css{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes javascript{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+
+@keyframes jquery{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 30%;
+	}
+}
+
+
+.python{ /*set skills and animation of jquery*/
+	width: 80%;
+	animation: python 2s;
+}
+@keyframes python{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+.xml{ /*set skills and animation of jquery*/
+	width: 40%;
+	animation: xml 2s;
+}
+@keyframes xml{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 40%;
+	}
+}
+.dart{ /*set skills and animation of jquery*/
+	width: 40%;
+	animation: dart 2s;
+}
+@keyframes dart{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 40%;
+	}
+}
+.sqlite{ /*set skills and animation of jquery*/
+	width: 40%;
+	animation: sqlite 2s;
+}
+@keyframes sqlite{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 40%;
+	}
+}
+
+
+
+  
+.circle {
+	background-color: #00ffcb;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -4px 0 0 -4px;
+	pointer-events: none;
+	mix-blend-mode: screen;
+	z-index: 10;
+	box-shadow: 0px 0px 8px 0px #a9e5fd inset, 0px 0px 24px 0px #3bd8ff, 0px 0px 8px 0px #FFFFFF42;
+  }
+  
+  .button-wrapper {
+	position: relative;
+  }
+  
+  .button {
+	z-index: 1;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	appearance: none;
+	display: inline-block;
+  }
+  
+  .button::before {
+	content: "";
+	box-shadow: 0px 0px 24px 0px #FFEB3B;
+	mix-blend-mode: screen;
+	transition: opacity 0.3s;
+  
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 999px;
+	opacity: 0;
+  }
+  
+  .button::after {
+	content: "";
+	box-shadow: 0px 0px 23px 0px #FDFCA9 inset, 0px 0px 8px 0px #FFFFFF42;
+	transition: opacity 0.3s;
+  
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 999px;
+	opacity: 0;
+  }
+  
+  .button-wrapper:hover {
+	.button::before, .button::after {
+	  opacity: 1;
+	}
+	
+	.dot {
+	  transform: translate(0, 0) rotate(var(--rotatation));
+	}
+	
+	.dot::after {
+	  animation-play-state: running;
+	}
+  }
+  
+  .dot {
+	display: block;
+	position: absolute;
+	transition: transform calc(var(--speed) / 12) ease;
+	width: var(--size);
+	height: var(--size);
+	transform: translate(var(--starting-x), var(--starting-y)) rotate(var(--rotatation));
+  }
+  
+  .dot::after {
+	content: "";
+	animation: hoverFirefly var(--speed) infinite, dimFirefly calc(var(--speed) / 2) infinite calc(var(--speed) / 3);
+	animation-play-state: paused; 
+	display: block;
+	border-radius: 100%;
+	background: yellow;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 6px 0px #FFEB3B, 0px 0px 4px 0px #FDFCA9 inset, 0px 0px 2px 1px #FFFFFF42;
+  }
+  
+  .dot-1 {
+	--rotatation: 0deg;
+	--speed: 14s;
+	--size: 6px;
+	--starting-x: 30px;
+	--starting-y: 20px;
+	top: 2px;
+	left: -16px;
+	opacity: 0.7;
+  }
+  
+  .dot-2 {
+	--rotatation: 122deg;
+	--speed: 16s;
+	--size: 3px;
+	--starting-x: 40px;
+	--starting-y: 10px;
+	top: 1px;
+	left: 0px;
+	opacity: 0.7;
+  }
+  
+  .dot-3 {
+	--rotatation: 39deg;
+	--speed: 20s;
+	--size: 4px;
+	--starting-x: -10px;
+	--starting-y: 20px;
+	top: -8px;
+	right: 14px;
+  }
+  
+  .dot-4 {
+	--rotatation: 220deg;
+	--speed: 18s;
+	--size: 2px;
+	--starting-x: -30px;
+	--starting-y: -5px;
+	bottom: 4px;
+	right: -14px;
+	opacity: 0.9;
+  }
+  
+  .dot-5 {
+	--rotatation: 190deg;
+	--speed: 22s;
+	--size: 5px;
+	--starting-x: -40px;
+	--starting-y: -20px;
+	bottom: -6px;
+	right: -3px;
+  }
+  
+  .dot-6 {
+	--rotatation: 20deg;
+	--speed: 15s;
+	--size: 4px;
+	--starting-x: 12px;
+	--starting-y: -18px;
+	bottom: -12px;
+	left: 30px;
+	opacity: 0.7;
+  }
+  
+  .dot-7 {
+	--rotatation: 300deg;
+	--speed: 19s;
+	--size: 3px;
+	--starting-x: 6px;
+	--starting-y: -20px;
+	bottom: -16px;
+	left: 44px;
+  }
+  
+  @keyframes dimFirefly {
+	0% {
+	  opacity: 1;
+	}
+	25% {
+	  opacity: 0.4;
+	}
+	50% {
+	  opacity: 0.8;
+	}
+	75% {
+	  opacity: 0.5;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes hoverFirefly {
+	  0% {
+		transform: translate(0, 0);
+	  }
+	  12% {
+		transform: translate(3px, 1px);
+	  }
+	  24% {
+		transform: translate(-2px, 3px);
+	  }
+	  37% {
+		transform: translate(2px, -2px);
+	  }
+	  55% {
+		transform: translate(-1px, 0);
+	  }
+	  74% {
+		transform: translate(0, 2px);
+	  }
+	  88% {
+		transform: translate(-3px, -1px);
+	  }
+	  100% {
+		transform: translate(0, 0);
+	  }
+  }

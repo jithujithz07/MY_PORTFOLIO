@@ -1,4 +1,4 @@
-
+  
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   
 let interval = null;
@@ -46,7 +46,9 @@ function scrollToSection(sectionId) {
         });
     }
   }
-
+  $(document).on('click', '#moveDown', function(){
+    $.fn.fullpage.moveSectionDown();
+  });
   function changeImage(imageName,text) {
     var imageContainer = document.querySelector('.My_Skills');
     var texth=document.querySelector('#Details');
@@ -77,7 +79,8 @@ function scrollToSection(sectionId) {
         // }
 
     }
-    
+
+
     
     
   

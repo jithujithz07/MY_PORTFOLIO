@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.css" integrity="sha512-earFJuyxuk1UIfnUubV3DGk2ysSejjmhMPb/4OXsqII9qmIbEwa1AaXrTqo4ivYizpbfyjXFZi6wENs94/BKWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- <link rel="stylesheet" type="text/css" href="example.css" /> -->
+    <link rel="stylesheet" type="text/css" href="Static/CSS/stylesnew.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+
+        <section id="intro">
+            <nav class="Name">
+              <p class="Texting" data-value="Dev. Jithu U S">Dev. Jithu U S</p>
+            </nav>
+            <div class="Motive">
+              <h1 class="Explore" data-value="DEV-LOOPER# #">DEV-LOOPER{ }</h1>
+            </div>
+            <div class="Next">
+              <button class="button" id="moveDown" data-menuanchor="secondPage" onclick="scrollToSection('I_do');">
+                EXPLORE
+              </button>
+            </div>
+          </section>
+    </div>
+	<div class="section" id="section1" data-anchor="about">
+	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+
+<div id="circle" class="circle bg-yellow-500"></div>
+    <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.js" integrity="sha512-NViEZJjGjED7yJ4ZdvfLJMngNqTZ2MBheREF9NgCTRUFe4mb3XO4VGO9LTCl2Oe9d/qZjvEs7BmkRsCCWdVqVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Static/Javascript/Script.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+    $(document).on('click', '#moveDown', function(){
+        $.fn.fullpage.moveSectionDown();
+      });
+</script>
+<script>
+    var kinet = new Kinet({
+        acceleration: 0.02,
+        friction: 0.25,
+        names: ["x", "y"],
+    });
+
+    var circle = document.getElementById('circle');
+
+    kinet.on('tick', function(instances) {
+        circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
+    });
+
+    document.addEventListener('mousemove', function (event) {
+        kinet.animate('x', event.clientX - window.innerWidth / 2 + window.scrollX);
+        kinet.animate('y', event.clientY - window.innerHeight / 2 + window.scrollY);
+    });
+
+    kinet.on('start', function() {
+        console.log('start');
+    });
+
+    kinet.on('end', function() {
+        console.log('end');
+    });
+</script>
+</body>
+</html>
