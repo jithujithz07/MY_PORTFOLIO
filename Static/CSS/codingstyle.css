@@ -1,88 +1,99 @@
-body{
-    background-color: black;
+body {
+    background-color: #050505;
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
-.SkillHead{
+
+.SkillHead {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .SkillHead h1{
-    color: #ffffff;
-    font-size: 40px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.SkillHead h1 {
+    color: #fff;
+    font-size: 48px;
     font-family: "Bruno Ace", sans-serif;
-      font-weight: 600;
-      font-style: normal;
-  }
-  .handle{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .handlereach{
-    border-radius: 10px;
-    margin: 5px;
-   width: 80px;
-   height: 5px;
-   background-color: #ffffff;
-   box-shadow: 0 0 10px #2187e7b3;
-   animation: handle 2s;
-  }
-  @keyframes handle{ /*animate jquery skills*/
-	0%{
-		width: 0%;
-	}
-
-	100%{
-		width: 80px;
-	}
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(0, 255, 203, 0.4);
 }
 
-  .skillbarbox{
+.handle {
+    display: none; /* Removed legacy handle design */
+}
+
+.skillbarbox {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  }
-  .skills h1{ /*change font family of heading*/
-	font-family: "Bruno Ace", sans-serif;
-      font-weight: 600;
-      font-style: normal;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 40px 10%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-li{ /*style the li tag*/
-	list-style-type: none;
-    font-size: 5 px;
-	font-family: "Bruno Ace", sans-serif;
-      font-weight: 600;
-      font-style: normal;
+.skills {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills{ /*style the text*/
-	width: 500px;
-	margin: 60px auto;
-	color: #fff;
+.skills:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 255, 203, 0.15);
+    border: 1px solid rgba(0, 255, 203, 0.2);
 }
 
-.skills li{ /*set margin of li*/
-	margin: 20px 0;
+.skills h1 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 24px;
+    color: #00ffcb;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-.bar{ /*style the bar*/
-	background-color: #353b48;
-	display: block;
-	height: 2px;
-	border: 1px solid rgba(0,0,0,0.3);
-	border-radius: 3px;
-	overflow: hidden;
-	box-shadow: 0 0 10px #2187e7b3;
+.skills ul {
+    padding: 0;
+    margin: 0;
 }
 
-.bar span{ /*style the span tag*/
-	height: 2px;
-	float: left;
-	background-color: #2187e7;
+.skills li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.skills h3 {
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+}
+
+.bar {
+    background-color: rgba(255, 255, 255, 0.05);
+    display: block;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar span {
+    height: 100%;
+    float: left;
+    background-color: #00ffcb;
+    box-shadow: 0 0 15px #00ffcb;
+    border-radius: 10px;
 }
 
 .html{ /*set skills and animation of html*/

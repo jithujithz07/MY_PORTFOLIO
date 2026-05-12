@@ -1,7 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 0, 0);
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
 }
 .circle {
 	background-color: #00ffcb;
@@ -16,130 +18,119 @@ body{
 	mix-blend-mode: screen;
 	z-index: 10;
 	box-shadow: 0px 0px 8px 0px #a9e5fd inset, 0px 0px 24px 0px #3bd8ff, 0px 0px 8px 0px #FFFFFF42;
-  }
-.back_btn{
+}
+.back_btn {
   position: fixed;
-  top:10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   border-radius: 50%;
-  border:2px solid #4FD1C5 ;
-  width: 60px;
-  height: 60px;
-  font-weight: bold;
+  border: 2px solid #00ffcb;
+  width: 50px;
+  height: 50px;
   color: #fff;
   display: flex;
-  flex-direction: column;
-  font-size: 40px;
+  align-items: center;
   justify-content: center;
+  font-size: 24px;
   cursor: pointer;
-  
+  z-index: 100;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
 }
-.back_btn span{
-  display: flex;
-  justify-content: center;
-  line-height: 20px;
+.back_btn:hover {
+  background: #00ffcb;
+  color: #000;
+  box-shadow: 0 0 15px #00ffcb;
 }
-.img_box_head{
+.img_box_head {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
     width: 100%;
-    height: 400px;
-    padding: 0%;
-    background-image: url('Images/Default_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.6), #050505);
 }
-.img_box_head h1{
-    color: white;
+.img_box_head h1 {
+    color: #fff;
     font-family: "Bruno Ace", sans-serif;
-    font-size: 30px;
-
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(0, 255, 203, 0.4);
 }
-.color_lines{
+.color_lines {
     display: flex;
-    width:100%
+    width: 100%;
+    height: 4px;
 }
-.orange{
-    width: 25%;
-    height: 10px;
-background-color:orange ;
-}
-.blue{
-    width: 15%;
-    height: 10px;
-background-color: #4FD1C5;
-}
-.white{
-    width:60%;
-    height: 10px;
-background-color: white;
-}
-.proj_list{
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin: 0 auto;
-}
-.proj_list_item{
-  width: 100%;
-  height: 600px;
-}
+.orange { width: 25%; background: #ff4b4b; box-shadow: 0 0 10px #ff4b4b; }
+.blue { width: 15%; background: #00ffcb; box-shadow: 0 0 10px #00ffcb; }
+.white { width: 60%; background: #ffffff; box-shadow: 0 0 10px #ffffff; }
 
-.img_group {
-  
-  display: flex;
-  flex-wrap: wrap;
+.proj_list {
+  width: 90%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin: 60px auto;
+}
+.proj_list_item {
   width: 100%;
-  background-color: black;
+  height: 400px;
 }
 
 .img_box {
-  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  margin: 8px;
-  border: none;
-  padding: 10px;
-  border-radius: 1.6rem;
-  background-color: black;
-  
+  border-radius: 20px;
 }
-  .wraper {
-    
-    transform: perspective(100rem);
-    
-    cursor: pointer;
-  }
+.wraper {
+  cursor: pointer;
+  border-radius: 20px;
+}
   
-  .contain {
-    
-    
-    height: 100%;
-    width: 100%;
-    border: 1px solid var(--background-color);
-    border-radius: 1.6rem;
-    padding: 4rem;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("Images/Webiste_img.jpg");
-    background-repeat: no-repeat;
-    background-size:contain;
-    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
-    transition: transform .6s 1s;
-  }
-  .contain h3{
-    color: white;
-    font-family: "Bruno Ace", sans-serif;
-  }
-  .contain p{
-    color: white;
-    font-family: "Bruno Ace", sans-serif;
+.contain {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  overflow: hidden;
+}
 
-  }
+
+
+.wraper:hover .contain {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 255, 203, 0.2);
+  border: 1px solid rgba(0, 255, 203, 0.3);
+}
+
+.contain h3 {
+  color: #00ffcb;
+  font-family: "Bruno Ace", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.contain p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  z-index: 2;
+  position: relative;
+}
   .contain::before,
   .contain::after {
     content: "";

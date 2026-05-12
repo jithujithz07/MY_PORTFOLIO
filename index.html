@@ -1,160 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.css" integrity="sha512-earFJuyxuk1UIfnUubV3DGk2ysSejjmhMPb/4OXsqII9qmIbEwa1AaXrTqo4ivYizpbfyjXFZi6wENs94/BKWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script
-      src="https://kit.fontawesome.com/ae429e3848.js"
-      crossorigin="anonymous"
-    >
-  </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jithu U S</title>
-    <script src="./kinet-master/dist/kinet.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="Static/CSS/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jithu U S | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
-      rel="stylesheet"
-    />
-    
-  </head>
-  <body>
-    <div id="fullpage">
-      <div class="section">
-        <section id="intro">
-          <div class="Name">
-            <p class="Texting" data-value="Dev. Jithu U S">Dev. Jithu U S</p>
-          </div>
-          <div class="Motive">
-            <h1 class="Explore" data-value="DEV-LOOPER# #">DEV-LOOPER{ }</h1>
-          </div>
-          <div class="Next">
-            <button class="button" onclick="scrollToSection('I_do');">
-              EXPLORE
-            </button>
-          </div>
-        </section>
+  <!-- Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.css" />
+  <script src="https://kit.fontawesome.com/ae429e3848.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Outfit:wght@300;400;600;800&display=swap"
+    rel="stylesheet" />
 
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="Static/CSS/styles.css" />
+</head>
 
-      </div>
-      <div class="section">
-        <section id="I_do">
-          <div class="About_Me">
-            <div class="My_pic_parell">
-              <img class="my_pic" src="Static/CSS/Images/my_pic.jpg" alt="" />
-            </div>
-            <div class="Me_word">
-              <h1>
-                Hi,There <i class="fa-regular fa-hand" id="ic"></i><br />
-                I am Jithu
-              </h1>
-              <p id="Details">
-                Crazy Little Soul who love to <b>"BE CREATIVE"</b>,
-              </p>
-            </div>
-            <div class="par_fill"></div>
-            <div class="par_fill"></div>
-            <div class="par_fill"></div>
-          </div>
-          <!-- skills  -->
-          <div class="My_Skills">
-            <ul>
-              <li
-                id="pyt"
-                class="skill"
-                onmouseover="changeImage('Static/CSS/Images/Programing_bg.jpg','languages i speak <br> Python, C, Java')"
-                onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who love to <b> BE CREATIVE</b>')"
-              >
-                <p>Coder || Programer</p>
-              </li>
-              <li
-                id="wed"
-                class="skill"
-                onclick="location.href = './project_webpages.html'; "
-                onmouseover="changeImage('Static/CSS/Images/Webiste_img.jpg','I do make webpages<br>HTML,CSS,JS,React.JS,Django,Odoo ERP')"
-                onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who love to <b> BE CREATIVE</b>')"
-              >
-                <p>Website Design</p>
-              </li>
-    
-              <li
-                id="con"
-                class="skill"
-                onmouseover="changeImage('Static/CSS/Images/content_bg.jpeg','Made some video edits<br>Capcut')"
-                onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who love to <b> BE CREATIVE</b>')"
-              >
-                <p>Content Maker</p>
-              </li>
-    
-              <li
-                id="gam"
-                class="skill"
-                onmouseover="changeImage('Static/CSS/Images/blog.jpg','Odoo Blogs<br> Odoo modules')"
-                onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who love to <b> BE CREATIVE</b>')"
-              >
-                <p>Blogs</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+<body>
+  <div id="fullpage">
 
-
-      </div>
-      <div class="section">
-        
-        <section>
-          <div class="handle">
-              <div class="handlereach"></div>
-              <div class="handlereach"></div>
-              <div class="handlereach"></div>
-          </div>
-          <div class="SkillHead">
-              <h1>My Arsenal Levels</h1>
-          </div>
-          <div class="skillbarbox"></div>
+    <!-- Section 1: Intro -->
+    <div class="section" data-anchor="home">
+      <section id="intro" style="position: relative;">
+        <a href="./Static/Files/Jithu_U_S_Python_Developer_Resume_2026.pdf" download class="resume-btn"
+          title="Download Resume">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+        <div class="Name">
+          <p class="Texting" data-value="Dev. Jithu U S">Dev. Jithu U S</p>
+        </div>
+        <div class="Motive">
+          <h1 class="Explore" data-value="DEV-LOOPER{ }">DEV-LOOPER{ }</h1>
+        </div>
+        <div class="Sub-Heading">
+          <p>Software Developer || Web Designer || Odoo Developer</p>
+        </div>
+        <div class="Next">
+          <button class="button" id="moveDown">
+            EXPLORE
+          </button>
+        </div>
       </section>
+    </div>
 
-      </div>
-      <div class="section">Some section</div>
+    <!-- Section 2: About Me -->
+    <div class="section" data-anchor="about">
+      <section id="I_do">
+        <div class="About_Me">
+          <div class="My_pic_parell">
+            <img class="my_pic" src="Static/CSS/Images/my_pic.jpg" alt="Jithu U S" />
+          </div>
+          <div class="Me_word">
+            <h1>
+              Hi, There <i class="fa-regular fa-hand" id="ic"></i><br />
+              I am Jithu
+            </h1>
+            <p id="Details">
+              Crazy Little Soul who loves to <b>"BE CREATIVE"</b>.
+            </p>
+          </div>
+          <div class="par_fills_container">
+            <div class="par_fill"></div>
+            <div class="par_fill"></div>
+            <div class="par_fill"></div>
+          </div>
+        </div>
+
+        <div class="My_Skills">
+          <ul>
+            <li id="pyt" class="skill" onclick="window.location.href='./codingskill.html'"
+              onmouseover="changeImage('Static/CSS/Images/Programing_bg.jpg','Languages I speak: Python, C, Java')"
+              onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who loves to <b>BE CREATIVE</b>')">
+              <p>Coder || Programmer</p>
+            </li>
+            <li id="wed" class="skill" onclick="window.location.href='./Project_webpages.html'"
+              onmouseover="changeImage('Static/CSS/Images/Webiste_img.jpg','I make webpages: HTML, CSS, JS, React.JS, Django, Odoo ERP')"
+              onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who loves to <b>BE CREATIVE</b>')">
+              <p>Website Design</p>
+            </li>
+            <li id="con" class="skill"
+              onmouseover="changeImage('Static/CSS/Images/content_bg.jpeg','Made some video edits: Capcut')"
+              onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who loves to <b>BE CREATIVE</b>')">
+              <p>Content Maker</p>
+            </li>
+            <li id="gam" class="skill" onmouseover="changeImage('Static/CSS/Images/blog.jpg','Odoo Blogs & Modules')"
+              onmouseleave="changeImage('Static/CSS/Images/Default_bg.jpg','Crazy Little Soul who loves to <b>BE CREATIVE</b>')">
+              <p>Blogs</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Section 4: Contact -->
+    <div class="section" data-anchor="contact">
+      <section id="contact-section">
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="interactive"></div>
+        </div>
+        <div class="contact-content">
+          <h1>Find Me Online</h1>
+          <p>Available for new projects and collaborations.</p>
+
+          <!-- Original Firefly Button from codingskill.html -->
+          <a class="button-wrapper" href="mailto:jithuus1318@gmail.com">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-2"></span>
+            <span class="dot dot-3"></span>
+            <span class="dot dot-4"></span>
+            <span class="dot dot-5"></span>
+            <span class="dot dot-6"></span>
+            <span class="dot dot-7"></span>
+            <span class="connect-button">Get In Touch</span>
+          </a>
+
+          <div class="content">
+            <h1 class="social_media_title"
+              style="font-family: 'Bruno Ace', sans-serif; font-size: 24px; margin-top: 40px; margin-bottom: 20px; letter-spacing: 2px;">
+              REACH OUT❤️</h1>
+            <div class="icon_box social-links">
+              <a href="https://www.linkedin.com/in/jithu-us1318/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/jithujithz07" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://youtube.com/@the-dev-looper?si=B2aaW8biJ1ybPrMs" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a href="https://www.instagram.com/the_dev_looper?igsh=OHZkY25jbHl3czFx" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="mailto:jithuus1318@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </div>
-    
-    
-    
-    <div id="circle" class="circle bg-yellow-500"></div>
-    <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
-    <script src="Static/Javascript/Script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.js" integrity="sha512-NViEZJjGjED7yJ4ZdvfLJMngNqTZ2MBheREF9NgCTRUFe4mb3XO4VGO9LTCl2Oe9d/qZjvEs7BmkRsCCWdVqVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      var kinet = new Kinet({
-          acceleration: 0.02,
-          friction: 0.25,
-          names: ["x", "y"],
-      });
-  
-      var circle = document.getElementById('circle');
-  
-      kinet.on('tick', function(instances) {
-          circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
-      });
-  
-      document.addEventListener('mousemove', function (event) {
-          kinet.animate('x', event.clientX - window.innerWidth / 2 + window.scrollX);
-          kinet.animate('y', event.clientY - window.innerHeight / 2 + window.scrollY);
-      });
-  
-      kinet.on('start', function() {
-          console.log('start');
-      });
-  
-      kinet.on('end', function() {
-          console.log('end');
-      });
-  </script>
-  
 
-  </body>
+  <!-- Cursor -->
+  <div id="circle" class="circle"></div>
+
+  <!-- Scripts — fullPage MUST come before Script.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.min.js"></script>
+  <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+  <script src="Static/Javascript/Script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // FullPage.js
+      new fullpage('#fullpage', {
+        licenseKey: 'gplv3-license',
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: 'right',
+        anchors: ['home', 'about', 'contact'],
+        scrollingSpeed: 700,
+        scrollOverflow: true,
+        fitToSection: true
+      });
+      // Kinet cursor & Liquid Background
+      var kinet = new Kinet({
+        acceleration: 0.02,
+        friction: 0.25,
+        names: ['x', 'y'],
+      });
+
+      var circle = document.getElementById('circle');
+      var interactive = document.querySelector('.interactive');
+
+      kinet.on('tick', function (instances) {
+        // Cursor dot (Physics-based follow)
+        circle.style.transform =
+          'translate3d(' + instances.x.current + 'px, ' +
+          instances.y.current + 'px, 0) ' +
+          'rotateX(' + (instances.x.velocity / 2) + 'deg) ' +
+          'rotateY(' + (instances.y.velocity / 2) + 'deg)';
+
+        // Interactive mesh gradient (Exact cursor follow)
+        if (interactive) {
+          // Calculate position relative to section
+          interactive.style.transform =
+            'translate3d(' + (instances.x.current + window.innerWidth / 2) + 'px, ' +
+            (instances.y.current + window.innerHeight / 2) + 'px, 0)';
+        }
+      });
+
+      document.addEventListener('mousemove', function (event) {
+        kinet.animate('x', event.clientX - window.innerWidth / 2);
+        kinet.animate('y', event.clientY - window.innerHeight / 2);
+      });
+
+      // EXPLORE button → scroll to next section
+      var moveDownBtn = document.getElementById('moveDown');
+      if (moveDownBtn) {
+        moveDownBtn.addEventListener('click', function () {
+          fullpage_api.moveSectionDown();
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>
